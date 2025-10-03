@@ -1,6 +1,9 @@
 # pathutils-vim
 A handful of path-related and other utility functions used in my other plugins.
 
+# Installation
+Use your preferred plugin manager. I personally like [VimPlug](https://github.com/junegunn/vim-plug)
+
 # Functions
 
 ```
