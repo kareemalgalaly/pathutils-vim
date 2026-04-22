@@ -39,6 +39,14 @@ function! pathutils#matchcount(text, regex)
     return len(split(a:text, a:regex, 1)) - 1
 endfunction
 
+function! pathutils#escaperegex(text)
+    return escape(a:text, '^$.*?/\[]~')
+endfunction
+
+function! pathutils#escapevregex(text)
+    return escape(a:text, '^$.*?/\[]~+{}(|)=')
+endfunction
+
 " ------------------------------------------------------------------------------
 " FILE DESCRIPTIONS
 " Note: '*' only allowed in non-perforce paths with unique shell (glob) expansion
